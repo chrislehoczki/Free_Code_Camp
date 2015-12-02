@@ -9,6 +9,7 @@ function destroyer(arr) {
   array0 = arrArray[0];
 
   console.log(array0.filter(filter1));
+  return array0.filter(filter1);
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3, "");
