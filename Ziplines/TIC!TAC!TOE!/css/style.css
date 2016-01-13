@@ -1,0 +1,92 @@
+body {
+  text-align: center;
+  background-color: lightgreen;
+  font-family: "Oswald"
+}
+
+h1 {
+  font-size: 4em;
+  text-shadow: 2px 2px white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.option1 {
+  width: 75px;
+  height: 50px;
+  margin: 10px;
+}
+
+.option2 {
+  width: 90px;
+  height: 50px;
+  margin: 10px;
+}
+
+.game {
+  width:100px;
+  height: 100px;
+  margin: 3px;
+  font-size: 30px;
+}
+.board {
+  margin: 30px auto;
+  width: 330px;
+}
+
+#reset {
+  width: 100px;
+}
+
+
+
+footer {
+   font-size: 1.2em;
+  background-color: #1D1F20;
+  padding: 10px;
+  color: white;
+  max-width: 100%;
+  text-align: center;
+  clear: both;
+  margin-top: 100px;
+}
+
+footer p {
+  font-size: 15px;
+  padding: 10px;
+}
+footer ul {
+  border-top: 3px solid #EA4335;
+  border-bottom: 3px solid #EA4335;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+footer li a{
+ text-decoration: none;
+  color: white;
+  transition: 1s ease;
+  font-size: 1em;
+  }
+
+footer li a:hover {
+  color: #EA4335;
+  text-decoration: none;
+  }
+
+.selected {
+  background-color: gray;
+}

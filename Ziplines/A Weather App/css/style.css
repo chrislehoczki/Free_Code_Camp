@@ -1,0 +1,80 @@
+body {
+  font-family: "Oswald";
+}
+h1, h2 {
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: 3px 3px black;
+  color: white;
+}
+
+.weatherapp {
+  text-align: center;
+  width: 600px;
+  margin: 50px auto;
+  background-color: slateblue;
+  padding: 20px;
+  border-radius: 5px;
+  text-shadow: 2px 2px black;
+  color: white;
+  border: 2px solid black;
+}
+
+.weatherapp ul li {
+  display: inline;
+  padding: 15px;
+  margin: 2px;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 1.6em;
+}
+
+.weatherapp ul {
+  padding: 10px;
+  margin-top: 40px;
+}
+
+button {
+  margin: 10px;
+  width: 70px;
+  height: auto;
+}
+
+
+
+footer {
+   font-size: 1.2em;
+  background-color: #1D1F20;
+  padding: 10px;
+  color: white;
+  max-width: 100%;
+  text-align: center;
+}
+footer ul {
+  border-top: 3px solid #EA4335;
+  border-bottom: 3px solid #EA4335;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+footer li a{
+ text-decoration: none;
+  color: white;
+  transition: 1s ease;
+  font-size: 1em;
+  }
+
+footer li a:hover {
+  color: #EA4335;
+  text-decoration: none;
+  }

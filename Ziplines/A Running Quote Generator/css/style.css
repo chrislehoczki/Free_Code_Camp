@@ -1,0 +1,63 @@
+
+body {
+  background-color: grey;
+}
+
+.generator {
+  background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/0D4B7B7FED.jpg");
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 500px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  padding-top: 20px;
+font-size: 80px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.btn {
+  width: 200px;
+  font-size: 20px;
+  color: black;
+  border: 1px solid #E9AC6D;
+  margin-bottom: 15px;
+  transition: all 1s ease;
+}
+
+.btn:hover {
+  background-color: #E9AC6D;
+  color: white;
+  border: 1px solid white;
+}
+
+
+.quote {
+  padding: 5px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.author {
+  background-color: #E4B37B;
+  padding: 5px;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.quote a {
+  color: transparent;
+}
+

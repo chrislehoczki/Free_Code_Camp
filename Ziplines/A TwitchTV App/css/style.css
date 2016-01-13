@@ -1,0 +1,127 @@
+body {
+  text-align: center;
+  font-family: "Oswald";
+  background-color: black;
+}
+
+#app {
+  background-color: rgb(190,80,81);
+  width:400px;
+  margin: 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 20px auto;
+  text-shadow: 2px 2px gray;
+  font-weight: bold;
+  color: black;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+input {
+  width: 200px;
+  margin: 10px auto;
+}
+
+.stream {
+  margin: 20px auto;
+  width: 70%;
+  display: block;
+  clear: both;
+  margin: 5px auto 2px auto;
+  overflow: hidden;
+  padding: 0;
+  background-color: rgba(0,0,1,0.1);
+  border-radius: 5px;
+}
+
+.stream li {
+  display: inline;
+  height: 50px;
+  float: left;
+  padding: 5px;
+  display: table;
+}
+
+.stream a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 2px 2px gray;
+  font-weight: bolder;
+}
+
+.stream a:hover {
+  color: #3d1212;
+  text-shadow: none;
+  font-weight: bolder;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.displayName {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+  text-align: left;
+  font-size: 1.5em;
+  width: 140px;
+}
+
+.activityDisplay {
+  width: 20px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.status {
+  text-align: left;
+  font-size: 0.8em;
+  width: 140px;
+}
+
+
+footer {
+   font-size: 1.2em;
+  background-color: #1D1F20;
+  padding: 10px;
+  color: white;
+  max-width: 100%;
+  text-align: center;
+}
+footer ul {
+  border-top: 3px solid #EA4335;
+  border-bottom: 3px solid #EA4335;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+footer li a{
+ text-decoration: none;
+  color: white;
+  transition: 1s ease;
+  font-size: 1em;
+  }
+
+footer li a:hover {
+  color: #EA4335;
+  text-decoration: none;
+  }

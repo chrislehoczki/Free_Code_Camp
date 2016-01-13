@@ -1,0 +1,141 @@
+body {
+  background-color: slateblue;
+  font-family: Open Sans;
+  color: #1D1F20;
+}
+
+#start {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border-radius: 20%;
+  margin: 0px auto;
+  display: block;
+  cursor: pointer; 
+  cursor: hand; 
+}
+
+#viewer {
+  display:none;
+}
+
+#title {
+  margin: 60px auto 20px;
+  width: 80%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+p {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+input {
+  width: 200px; 
+  margin: 10px auto;
+  clear: both;
+  display: block;
+  height: 30px;
+}
+
+.btn {
+  margin: 10px auto 40px auto;
+  width: 215px;
+  display: block;
+  background-color: #1D1F20;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.article {
+  margin: 5px auto;
+  background-color: #343436;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Open Sans;
+  transition: 0.2s ease;
+}
+
+.article h1 {
+  margin: 10px 0px;
+  padding-top: 5px 0px;
+}
+
+.article:hover {
+  background-color: black;
+}
+
+li {
+  display: block;
+  font-size: 1.1em;
+}
+ul {
+  display: block;
+}
+
+a {
+  display: block;
+  width: 85%;
+  margin: 0px auto;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+a:visited li {color: gray;
+text-decoration: none;}
+a:visited h1 {color: gray;
+text-decoration: none;}
+
+footer {
+   font-size: 1.2em;
+  background-color: #1D1F20;
+  padding: 10px;
+  color: white;
+  max-width: 100%;
+  text-align: center;
+  clear: both;
+  margin-top: 100px;
+}
+footer ul {
+  border-top: 3px solid #EA4335;
+  border-bottom: 3px solid #EA4335;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+footer li a{
+ text-decoration: none;
+  color: white;
+  transition: 1s ease;
+  font-size: 1em;
+  }
+
+footer li a:hover {
+  color: #EA4335;
+  text-decoration: none;
+  }

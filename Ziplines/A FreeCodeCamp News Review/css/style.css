@@ -1,0 +1,118 @@
+body {
+  background-color: #EDEFF0;
+}
+
+body h1 { 
+  font-family: "Oswald";
+  text-align: center;
+  margin: 50px;
+  font-size: 5em;
+  font-weight: bolder;
+  text-shadow: 3px 3px gray;
+  color: black;
+}
+
+#stories {
+  width: 95%;
+  margin: 0px auto;
+}
+
+.story {
+  width: 18%;
+  margin: 1%;
+  display: inline;
+  float: left;
+  font-size: 1.2em;
+  background-color: white;
+  border-radius: 3px;
+  font-weight: bolder;
+  transition: 0.5s ease;
+}
+.story:hover {
+  background-color: lightgray;
+}
+
+.story ul {
+  margin: 0;
+  padding: 5px;
+}
+
+.story li {
+  list-style-type: none;
+  margin: 5px;
+}
+
+.story img {
+  width: 100%;
+  height: auto;
+}
+
+.story a {
+  color: darkgreen;
+  transition: 0.5s ease;
+}
+
+.story a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.image {
+  margin-top: 0 !important;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.right { 
+float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+
+footer {
+   font-size: 1.2em;
+  background-color: #1D1F20;
+  padding: 10px;
+  color: white;
+  max-width: 100%;
+  text-align: center;
+  clear: both;
+  margin-top: 20px;
+}
+footer ul {
+  border-top: 3px solid #EA4335;
+  border-bottom: 3px solid #EA4335;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
+footer li a{
+ text-decoration: none;
+  color: white;
+  transition: 1s ease;
+  font-size: 1em;
+  }
+
+footer li a:hover {
+  color: #EA4335;
+  text-decoration: none;
+  }
