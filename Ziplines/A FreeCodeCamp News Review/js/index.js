@@ -30,7 +30,6 @@ return dateValues.join(" ");
 // AJAX REQUEST
 
 $.getJSON( "http://www.freecodecamp.com/news/hot", function(data) {
-  console.log(data);
   for (i=0; i < 20; i++) { // loop to go through 20 news articles
   var html = "";
   html += "<div class='story'> <ul>";

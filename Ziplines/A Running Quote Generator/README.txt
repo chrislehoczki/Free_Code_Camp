@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/chris_is_phillips/pen/rOdbKM.
-
- 
+This gets quotes from an array, then dynamically creates a tweet button that fills it with dynamic text on the page.

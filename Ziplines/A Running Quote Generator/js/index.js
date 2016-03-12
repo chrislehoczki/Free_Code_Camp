@@ -16,28 +16,28 @@ $(".author").hide();
 var main = function(){
 $(".btn").click(function() {
    
-  var iframes = document.getElementsByTagName('iframe');
-for (var i = 0; i < iframes.length; i++) {
-    iframes[i].parentNode.removeChild(iframes[i]);
-}
+  	var iframes = document.getElementsByTagName('iframe');
+	for (var i = 0; i < iframes.length; i++) {
+	    iframes[i].parentNode.removeChild(iframes[i]);
+	}
   
-  $("h3").remove();
-    $("h4").remove();
-  
-   var quoteNumber = Math.floor((Math.random() * 10));
-  
-  $('.quote').append("<h3>" + (quotes[quoteNumber][0]) + "</h3>");
-  
-  $('.author').show().append("<h4>" + quotes[quoteNumber][1] + "<h4>");
-  
-twttr.widgets.createShareButton(
-  'http://www.cphillips.co.uk',
-  document.getElementById('twitter'),
-  {
-    text: quotes[quoteNumber][0] + " " + quotes[quoteNumber][1]
-  });
-             
-    });
+	$("h3").remove();
+	$("h4").remove();
+
+	var quoteNumber = Math.floor((Math.random() * 10));
+
+	$('.quote').append("<h3>" + (quotes[quoteNumber][0]) + "</h3>");
+
+	$('.author').show().append("<h4>" + quotes[quoteNumber][1] + "<h4>");
+
+	twttr.widgets.createShareButton(
+	  'http://www.cphillips.co.uk',
+	  document.getElementById('twitter'),
+	  {
+	    text: quotes[quoteNumber][0] + " " + quotes[quoteNumber][1]
+	  });
+
+	});
 };
               
 $(document).ready(main);

@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/chris_is_phillips/pen/QjYKWL.
-
- 
+A news summary creator for Free Code Camp's hot news API. Dynamically inserts HTML from an API request.

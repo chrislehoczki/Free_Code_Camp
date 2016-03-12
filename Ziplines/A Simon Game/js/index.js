@@ -53,7 +53,8 @@ function addNew() {
 
 
 //go through each button and highlight every second
-  function runGame(addValue) {
+function runGame(addValue) {
+
   $("#instructions").hide();
   playerChoices = []; //remove last player attempt
   clearInterval(intervalId); //remove any timing
@@ -89,7 +90,7 @@ function endGame() {
   $("#sequenceLength span").html("<p>" + sequence.length + "</p>")
   console.log(sequence)
   console.log(playerChoices)
-  }
+}
 
 //START GAME
 $("#start").click(function() {
@@ -139,7 +140,7 @@ $(".gamebtn").click(function() {
   if (playerChoices[i] === sequence[i]) {
   counter += 1;
   continue;
-}
+  }
   else if ($("#strict").hasClass("selected")) {
     endGame(); 
     $("span").text("X");
@@ -151,8 +152,8 @@ $(".gamebtn").click(function() {
   runGame(); //run game again without adding new value.
   boolCheck = false;
   }
-}
-  
+  }
+  //ADD SPEED 
   if (playerChoices.length === 20) {
     alert("Congratulations you beat the game!")
     endGame();

@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/chris_is_phillips/pen/wKJMKx.
-
- 
+My first attempt at a portfolio, I wrote this readme 6 months after doing this, wow..... I forgot how bad my code was...

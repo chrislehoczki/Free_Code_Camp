@@ -1,10 +1,10 @@
 
 // Set up controls for options
-   $("#XorO").show();
-   $("#computerQuestion").hide();
-   $("#reset").hide();
-   $(".board").hide();
-   $("footer").hide();
+$("#XorO").show();
+$("#computerQuestion").hide();
+$("#reset").hide();
+$(".board").hide();
+$("footer").hide();
 
 //VARIABLES
 var playerTurn = "X"; //default as X
@@ -46,66 +46,66 @@ function fillInResponse(array, value, output) {
 function addResponse(checkValue) { 
   
   // create arrays of diagonals
-         var buttonArrayD1 = [];
-         var buttonArrayD2 = [];
-      
-      buttonArrayD1.push($("#0_0"))
-      buttonArrayD1.push($("#1_1"))
-      buttonArrayD1.push($("#2_2"))
-      
-      buttonArrayD2.push($("#2_0"))
-      buttonArrayD2.push($("#1_1"))
-      buttonArrayD2.push($("#0_2"))
+  var buttonArrayD1 = [];
+  var buttonArrayD2 = [];
+        
+  buttonArrayD1.push($("#0_0"))
+  buttonArrayD1.push($("#1_1"))
+  buttonArrayD1.push($("#2_2"))
+  
+  buttonArrayD2.push($("#2_0"))
+  buttonArrayD2.push($("#1_1"))
+  buttonArrayD2.push($("#0_2"))
 
-      var booleanCheck;
+  var booleanCheck;
   
-    //Check diagonal1 for WIN/BLOCK
-      booleanCheck = fillInResponse(buttonArrayD1, checkValue, computerTurn);
-      if (booleanCheck) {
-        return true; // return from function
-        }
-  
-      //Check diagonal2 for WIN/BLOCK
-      booleanCheck = fillInResponse(buttonArrayD2, checkValue, computerTurn);
-      if (booleanCheck) {
-        return true; // return from function
-        }
-  
-          //Check diagonal1 for WIN/BLOCK
-      booleanCheck = fillInResponse(buttonArrayD1, checkValue, computerTurn);
-      if (booleanCheck) {
-        return true; // return from function
-        }
+//Check diagonal1 for WIN/BLOCK
+  booleanCheck = fillInResponse(buttonArrayD1, checkValue, computerTurn);
+  if (booleanCheck) {
+    return true; // return from function
+    }
+
+  //Check diagonal2 for WIN/BLOCK
+  booleanCheck = fillInResponse(buttonArrayD2, checkValue, computerTurn);
+  if (booleanCheck) {
+    return true; // return from function
+    }
+
+      //Check diagonal1 for WIN/BLOCK
+  booleanCheck = fillInResponse(buttonArrayD1, checkValue, computerTurn);
+  if (booleanCheck) {
+    return true; // return from function
+    }
   
   // Loop to check horizontal and vertical lines for WIN/BLOCK
-        for (j = 0; j < 3; j++) {
-          //button arrays for horizontal, vertical diagonals
-          buttonArrayH = [];
-          buttonArrayV = [];
-          
-          //push to horizontal array
-          buttonArrayH.push($("#0_" + j));
-          buttonArrayH.push($("#1_" + j));
-          buttonArrayH.push($("#2_" + j));
+    for (j = 0; j < 3; j++) {
+      //button arrays for horizontal, vertical diagonals
+      buttonArrayH = [];
+      buttonArrayV = [];
+      
+      //push to horizontal array
+      buttonArrayH.push($("#0_" + j));
+      buttonArrayH.push($("#1_" + j));
+      buttonArrayH.push($("#2_" + j));
 
-          //push to vertical array
-          buttonArrayV.push($("#" + j + "_0"));
-          buttonArrayV.push($("#" + j + "_1"));
-          buttonArrayV.push($("#" + j + "_2"));
- 
-          //CHECK HORIZONTAL
-             booleanCheck = fillInResponse(buttonArrayH, checkValue, computerTurn);
+      //push to vertical array
+      buttonArrayV.push($("#" + j + "_0"));
+      buttonArrayV.push($("#" + j + "_1"));
+      buttonArrayV.push($("#" + j + "_2"));
+
+      //CHECK HORIZONTAL
+      booleanCheck = fillInResponse(buttonArrayH, checkValue, computerTurn);
       if (booleanCheck) {
         return true; // return from function
-        }
-          //CHECK VERTICAL
-     booleanCheck = fillInResponse(buttonArrayV, checkValue, computerTurn);
+      }
+      //CHECK VERTICAL
+      booleanCheck = fillInResponse(buttonArrayV, checkValue, computerTurn);
       if (booleanCheck) {
-        return true; // return from function
-        }   
-        } //end of loop
-        return false;
-      } // end of function
+      return true; // return from function
+      }   
+      } //end of loop
+          return false;
+        } // end of function
 
 //FUNCTION BLOCK FORK
 
@@ -128,73 +128,73 @@ function fillCenter() {
 function oppositeCorner() {
   var diagonal1 = [];
   var diagonal2 = [];
-    
-      diagonal1.push($("#0_0"))
-      diagonal1.push($("#1_1"))
-      diagonal1.push($("#2_2"))
-      
-      diagonal2.push($("#2_0"))
-      diagonal2.push($("#1_1"))
-      diagonal2.push($("#0_2"))
+
+  diagonal1.push($("#0_0"))
+  diagonal1.push($("#1_1"))
+  diagonal1.push($("#2_2"))
+  
+  diagonal2.push($("#2_0"))
+  diagonal2.push($("#1_1"))
+  diagonal2.push($("#0_2"))
 
 
       //check if opposite corner is playerTurn, if so add value
 
-      if (diagonal1[0].text() === playerTurn && diagonal1[2].text() === "") {
-        diagonal1[2].text(computerTurn)
-        return true;
-      }
-        if (diagonal1[2].text() === playerTurn && diagonal1[0].text() === "") {
-        diagonal1[0].text(computerTurn)
-        return true;
-      }
-     if (diagonal2[0].text() === playerTurn && diagonal2[2].text() === "") {
-        diagonal2[2].text(computerTurn)
-        return true;
-      }
-        if (diagonal2[2].text() === playerTurn && diagonal2[0].text() === "") {
-        diagonal2[0].text(computerTurn)
-        return true;
-      }
+  if (diagonal1[0].text() === playerTurn && diagonal1[2].text() === "") {
+    diagonal1[2].text(computerTurn)
+    return true;
+  }
+    if (diagonal1[2].text() === playerTurn && diagonal1[0].text() === "") {
+    diagonal1[0].text(computerTurn)
+    return true;
+  }
+  if (diagonal2[0].text() === playerTurn && diagonal2[2].text() === "") {
+    diagonal2[2].text(computerTurn)
+    return true;
+  }
+  if (diagonal2[2].text() === playerTurn && diagonal2[0].text() === "") {
+    diagonal2[0].text(computerTurn)
+    return true;
+  }
 
 
   // FAILSAFE TO STOP FORK FROM PLAYER
 
-    if (diagonal1[0].text() === playerTurn && diagonal1[1].text() === computerTurn && diagonal1[2].text() === playerTurn) {
-      if ($("#1_0").text() === "") {
-        $("#1_0").text(computerTurn)
-      }
-      else if ($("#2_1").text() === "") {
-        $("#2_1").text(computerTurn)
-       
-      }
-      else if ($("#1_2").text() === "") {
-        $("#1_2").text(computerTurn)
-      }
-      else if ($("#0_1").text() === "") {
-        $("#0_1").text(computerTurn)
-      }
-      return true;
+  if (diagonal1[0].text() === playerTurn && diagonal1[1].text() === computerTurn && diagonal1[2].text() === playerTurn) {
+    if ($("#1_0").text() === "") {
+      $("#1_0").text(computerTurn)
     }
+    else if ($("#2_1").text() === "") {
+      $("#2_1").text(computerTurn)
+     
+    }
+    else if ($("#1_2").text() === "") {
+      $("#1_2").text(computerTurn)
+    }
+    else if ($("#0_1").text() === "") {
+      $("#0_1").text(computerTurn)
+    }
+    return true;
+  }
 
 
-   if (diagonal2[0].text() === playerTurn && diagonal2[1].text() === computerTurn && diagonal2[2].text() === playerTurn) {
-      if ($("#1_0").text() === "") {
-        $("#1_0").text(computerTurn)
-      }
-      else if ($("#2_1").text() === "") {
-        $("#2_1").text(computerTurn)
-       
-      }
-      else if ($("#1_2").text() === "") {
-        $("#1_2").text(computerTurn)
-      }
-      else if ($("#0_1").text() === "") {
-        $("#0_1").text(computerTurn)
-      }
-      return true;
+ if (diagonal2[0].text() === playerTurn && diagonal2[1].text() === computerTurn && diagonal2[2].text() === playerTurn) {
+    if ($("#1_0").text() === "") {
+      $("#1_0").text(computerTurn)
     }
-  
+    else if ($("#2_1").text() === "") {
+      $("#2_1").text(computerTurn)
+     
+    }
+    else if ($("#1_2").text() === "") {
+      $("#1_2").text(computerTurn)
+    }
+    else if ($("#0_1").text() === "") {
+      $("#0_1").text(computerTurn)
+    }
+    return true;
+  }
+
   
   
     //if a corner is empty - add value

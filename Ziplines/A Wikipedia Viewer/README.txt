@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/chris_is_phillips/pen/WQPYGy.
-
- 
+This uses the Wikipedia API to allow you to search for articles and displays them nicely for viewing. I added some JQuery animation to get things going.

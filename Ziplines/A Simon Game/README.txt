@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/chris_is_phillips/pen/yYrdNp.
-
- 
+A Simon game that uses interval methods, audio, and visuals to create a nice user experience. I loved creating this project.

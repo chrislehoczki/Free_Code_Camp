@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/chris_is_phillips/pen/YyMzrW.
-
- 
+A very challenging project. I created an AI from scratch using progressive enhancement of its intelligence over time. I learnt a lot from this one!

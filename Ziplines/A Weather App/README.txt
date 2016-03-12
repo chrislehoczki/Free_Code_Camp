@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/chris_is_phillips/pen/zvMvWz.
-
- 
+An API weather app that uses openweathermap and IP address to get location and display current data for where you are at any given moment.
